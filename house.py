@@ -1,5 +1,6 @@
-nam = input("What's your name ? ")
-match nam:
+name = input("What's your name ? ")
+
+match name:
    case "Harry"| "James" |"hello":
       print("Grinfyndor")
    case "Draco":
