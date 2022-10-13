@@ -1,8 +1,7 @@
-import random
-
+from random import choice
 
 bets = []
 for _ in range(10):
-    bets.append(random.choice(["head", "tail"]))
+    bets.append(choice(["head", "tail"]))
 
 print(bets)
