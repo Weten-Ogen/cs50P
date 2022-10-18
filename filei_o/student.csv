@@ -1,3 +1,4 @@
+name,house,year
 Hermione,Gryfindor,2002
 Ron,Gryfindor,2000
 Harry,Gryfindor,2003
@@ -5,3 +6,8 @@ Draco,Slytherin,1999
 Griny,Gryfindor,2003
 Neville,HufflePuff,1999
 Snape,RavenClaw,1975
+Cho,Ravenclaw,2001
+Cedric,HufflePuff,1989
+Luna,Gryfindor,2003
+Sirius,Unknown,1899
+Dumbledore,Gryfindor,1950
