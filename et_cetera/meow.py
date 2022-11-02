@@ -1,5 +1,5 @@
 def say(n: int) -> str: 
-    """Meow n times"""
+    """Meow n timesgit"""
     return "meow\n" * n
 
 number:int = int(input("Number: "))
