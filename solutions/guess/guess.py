@@ -1,26 +1,40 @@
 import random
+def guess_game():
+    while True:
+        # Get the level
+        l = int(input('Level :  '))
+        if l > 0:
+            # Pick a number btwn (1,100)
+            n =random.randint(1,l + 1)
+        else:       
+            # Reprompt the user
+            l = int(input('level :  '))
 
-while True:
-    lvl = int(input("enter a level : "))
-    if (lvl > 0 ):
-        num = int(random.randint(0, lvl))
-        print(f"*************{num} ***********")
-        print(f"I'm thinking of num between 1  and 100")
-        n = int(input("guess the answer : "))
-        if n < 0:
-            n = int(input('guess the answer : ')) 
-        elif n < num:
-            print('too small ')
-            n = int(input("guess the answer : "))
-        elif n > num :
-            print('too high ')
-            n = int(input('guess the anwer '))
-        else: 
-            print('just right')
-            break
+        while True:
+            # Prompt the user 
+            ans = int(input('Guess : '))
+            # If the l is greater than 1
+            if ans < n :
+                print('Just Small!')
+                ans = int(input('Guess : '))
+            elif ans == n :
+                print('Just Right!')
+                break
+            else:
+                print('Too large!')
+                ans = int(input('Guess : '))
+        return
+    
             
-    else: 
-        lvl = int(input('enter a level: '))
+    
+        
+        
+if __name__ == "__main__":
+    guess_game()      
+
+            
+        
+
         
         
 
